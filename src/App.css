@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+}
+
+.cell {
+  width: 15.2px;
+  height: 15.2px;
+  background-color: #3e4651;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  cursor: pointer;
+}
+
+.isAlive {
+  background-color: #36ba45;
+}
+
+.isDead {
+  background-color: #3e4651;
+}
+
+.control-panel {
+  margin-top: 10px;
+}
+
+.control-panel button {
+  cursor: pointer;
+  width: 100px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #36ba45;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.control-panel button:last-child {
+  margin-right: 0;
+}
