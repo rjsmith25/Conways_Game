@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -9,10 +13,27 @@
   align-items: center;
 }
 
+.game-title {
+  color: #36ba45;
+}
+
+.board-container {
+  display: flex;
+}
+
 .board {
   display: flex;
   flex-wrap: wrap;
   width: 380px;
+}
+
+.game-rules {
+  width: 400px;
+  margin-left: 10px;
+}
+
+.game-rules h2 {
+  padding-left: 20px;
 }
 
 .cell {
@@ -50,4 +71,48 @@
 
 .control-panel button:last-child {
   margin-right: 0;
+}
+
+.additional-controls {
+  margin: 10px 0;
+}
+
+.additional-controls button {
+  cursor: pointer;
+  width: 100px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #36ba45;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.generation {
+  font-size: 20px;
+}
+
+.presets {
+  display: flex;
+}
+
+.preset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #36ba45;
+}
+
+.preset:last-child {
+  margin-right: 0;
+}
+
+hr {
+  width: 380px;
 }
