@@ -169,7 +169,6 @@ function App() {
           </ul>
         </div>
       </div>
-
       <h2>Presets</h2>
       <div className="presets">
         <div onClick={()=>{selectPreset('pulsar')}} className="preset preset-1">Pulsar</div>
@@ -219,6 +218,8 @@ function App() {
           <option value="1000">1000</option>
         </select>
       </div>
+      <h2>About</h2>
+      <p>The Game of Life is a cellular automation created by Mathematician John Horton Conway in 1970.</p>
     </div>
   );
 }
